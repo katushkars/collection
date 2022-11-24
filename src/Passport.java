@@ -8,7 +8,7 @@ public class Passport {
     private String firstname;
     private String middleName;
     private String birthDate;
-    public   Set<Passport> passports = new LinkedHashSet<>();
+
 
     public Passport(int numberPassport, String surname, String firstname, String middleName, String birthDate) {
         this.numberPassport = numberPassport;
@@ -67,13 +67,6 @@ public class Passport {
         this.birthDate = birthDate;
     }
 
-    public Set<Passport> getPassports() {
-        return passports;
-    }
-
-    public void setPassports(Set<Passport> passports) {
-        this.passports = passports;
-    }
 
     @Override
     public String toString() {
@@ -87,14 +80,5 @@ public class Passport {
 
     }
 
-    public Passport findPassport (int numberPassport){
-        for(Passport passport:passports){
-            if(passport.getNumberPassport()==numberPassport){
-                return passport;
-            }
-        }
-        return null;
-    }
-
-    }
+}
 
