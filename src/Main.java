@@ -53,8 +53,38 @@ public class Main {
 
         System.out.println(passports.toString());
 
+        MapTask mapTask=new MapTask();
 
+        mapTask.addNumber ("кофе", 4);
+        mapTask.addNumber  ("кофе", 5);
+        mapTask.addNumber ("пицца", 5);
+        mapTask.addNumber  ("ром", 3);
+        mapTask.addNumber  ("мороженное", 10);
+        mapTask.addNumber  ("сосиска", 7);
+        mapTask.addNumber  ("рыба", 4);
+
+        MapTask2 mapTask2=new MapTask2();
+        System.out.println(mapTask2.getOrgiginalMapEntries());
+        System.out.println(mapTask2.getTransformedCollection());
+
+        //task2.2 (map)
+
+        Map<Integer,String> mapTask3 = new LinkedHashMap<>();
+        mapTask3.put(1,"A");
+        mapTask3.put(2,"B");
+        mapTask3.put(3,"C");
+        mapTask3.put(4,"D");
+        mapTask3.put(5,"E");
+        mapTask3.put(6,"F");
+        mapTask3.put(7,"G");
+        mapTask3.put(8,"H");
+        mapTask3.put(9,"I");
+        mapTask3.put(10,"J");
+
+        System.out.println(mapTask3.entrySet());
     }
+
+
 
     public static void addPassport(Passport passport,Set<Passport> passports) {
         passports.add(passport);
@@ -68,6 +98,10 @@ public class Main {
         }
         return null;
     }
-}
+
+
+    }
+
+
 
 
