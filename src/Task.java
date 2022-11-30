@@ -19,7 +19,7 @@ public class Task {
 
     @Override
     public int hashCode() {
-        return Objects.hash(number1, number2);
+        return Objects.hash(number1*number2, number2+number1);
     }
 
     @Override
